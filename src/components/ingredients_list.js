@@ -9,7 +9,7 @@ class IngredientsList extends React.Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:4000/')
+        axios.get('https://immense-basin-13550.herokuapp.com/')
         .then(res => {
       this.setState({
         data: res.data

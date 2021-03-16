@@ -39,7 +39,7 @@ class Recipe extends React.Component {
         let j;
         for(j = 0; j < ing_add.length; j++){
             let dat = ing_add[j]
-            axios.post('http://localhost:4000/use_recipe', dat)
+            axios.post('https://immense-basin-13550.herokuapp.com/use_recipe', dat)
             console.log(dat)
             alert('Recipe ingredients have been subtracted from ingredient list')
         }
@@ -51,7 +51,7 @@ class Recipe extends React.Component {
 
     componentDidMount(){
         const id = this.props.match.params.id
-        axios.get(`http://localhost:4000/recipe/${id}`)
+        axios.get(`https://immense-basin-13550.herokuapp.com/recipe/${id}`)
         .then(res => {
       this.setState({
         data: res.data
