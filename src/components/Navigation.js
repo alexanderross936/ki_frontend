@@ -15,23 +15,23 @@ const Navigation = ({ auth: { isAuthenticated, loading }, logout }) => {
 
         
     const authLinks = (<Fragment>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="/sum">Ingredients List</a>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul className="navbar-nav mr-auto">
+      <li className="nav-item">
+        <a className="nav-link" href="/sum">Ingredients List</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/recipes_list">Recipes List</a>
+      <li className="nav-item">
+        <a className="nav-link" href="/recipes_list">Recipes List</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/add_recipe">Add Recipe</a>
+      <li className="nav-item">
+        <a className="nav-link" href="/add_recipe">Add Recipe</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/add_ingredients">Add Ingredients</a>
+      <li className="nav-item">
+        <a className="nav-link" href="/add_ingredients">Add Ingredients</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" onClick={logout}>Logout</a>
+      <li className="nav-item">
+        <a className="nav-link" onClick={logout}>Logout</a>
       </li>
     </ul></div> </nav>  </Fragment>)
 
@@ -57,14 +57,14 @@ const Navigation = ({ auth: { isAuthenticated, loading }, logout }) => {
         //         </Fragment> */}
 
         const guestLinks = (<Fragment>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-        <a class="nav-link" href="/login">Login</a>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+        <li className="nav-item">
+        <a className="nav-link" href="/login">Login</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/register">Register</a>
+      <li className="nav-item">
+        <a className="nav-link" href="/register">Register</a>
       </li>
     </ul></div>
         </nav>

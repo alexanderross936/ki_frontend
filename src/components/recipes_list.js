@@ -11,7 +11,7 @@ class RecipesList extends React.Component {
     }
 
     componentDidMount(){
-        axios.get('https://immense-basin-13550.herokuapp.com/recipes')
+        axios.get('http://immense-basin-13550.herokuapp.com/recipes')
         .then(res => {
       this.setState({
         data: res.data
