@@ -20,7 +20,7 @@ export const loadUser = () => async dispatch => {
    }
 
    try {
-       const res = await axios.get('immense-basin-13550.herokuapp.com/user');
+       const res = await axios.get('http://immense-basin-13550.herokuapp.com/user');
         dispatch({
             type: USER_LOADED,
             payload: res.data
@@ -45,11 +45,11 @@ export const register = ({
         }
     }
 
-    
+
     const body = JSON.stringify({ name, email, password });
 
     try {
-        const res = await axios.post('immense-basin-13550.herokuapp.com/register', body, config);
+        const res = await axios.post('http://immense-basin-13550.herokuapp.com/register', body, config);
    
         dispatch({
             type: REGISTER_SUCCESS,
@@ -83,7 +83,7 @@ export const login = ( email,
     const body = JSON.stringify({ email, password });
 
     try {
-        const res = await axios.post('immense-basin-13550.herokuapp.com//login', body, config);
+        const res = await axios.post('http://immense-basin-13550.herokuapp.com//login', body, config);
    
         dispatch({
             type: LOGIN_SUCCESS,
