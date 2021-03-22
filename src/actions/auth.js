@@ -45,7 +45,6 @@ export const register = ({
         }
     }
 
-
     const body = JSON.stringify({ name, email, password });
 
     try {
