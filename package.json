@@ -13,6 +13,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.6.0",
     "build": "^0.1.4",
+    "cors-anywhere": "^0.4.4",
     "jquery": "^3.6.0",
     "mongoose": "^5.12.0",
     "react": "^16.13.1",
