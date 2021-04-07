@@ -11,7 +11,7 @@ class SumIngredients extends React.Component {
     }
 
     componentDidMount(){
-        axios.get('http://immense-basin-13550.herokuapp.com/sum')
+        axios.get('https://immense-basin-13550.herokuapp.com/sum')
         .then(res => {
       this.setState({
         data: res.data

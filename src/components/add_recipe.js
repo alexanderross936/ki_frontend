@@ -87,7 +87,7 @@ class AddRecipe extends React.Component {
             directions: this.state.directions
         }
         console.log(post)
-        axios.post('http://immense-basin-13550.herokuapp.com/add_recipe', post)
+        axios.post('https://immense-basin-13550.herokuapp.com/add_recipe', post)
         let prevState = this.state
         this.setState({
             title: '',

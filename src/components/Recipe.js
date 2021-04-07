@@ -51,7 +51,7 @@ class Recipe extends React.Component {
 
     componentDidMount(){
         const id = this.props.match.params.id
-        axios.get(`http://immense-basin-13550.herokuapp.com/recipe/${id}`)
+        axios.get(`https://immense-basin-13550.herokuapp.com/recipe/${id}`)
         .then(res => {
       this.setState({
         data: res.data
