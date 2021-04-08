@@ -118,16 +118,16 @@ class AddRecipe extends React.Component {
     </table>
 
         return (
-            <div>
- 
+            <div style={{margin: '90px' }}><br></br>
+ <br></br>
+                                <h5 class="card-subtitle mb-2 text-muted">Recipe Title</h5>
 
             <input id="title" name="title" type="text" 
             value={this.state.title} 
             onChange={this.handleChangeTitle} />
             <br></br>
-            <h3>Recipe</h3>
                 <p>{this.state.title}</p>
-                <h3>Ingredients and Measurement</h3>
+                <h3 class="card-subtitle mb-2 text-muted">Ingredients and Measurement</h3>
                     <p>{data}</p>
                 <h3>Directions</h3>
                 <p>{this.state.directions}</p>
@@ -136,13 +136,13 @@ class AddRecipe extends React.Component {
                             onSubmit={this.handleSubmit}
                             > */}
 
-            Ingredients:
+<h3 class="card-subtitle mb-2 text-muted">Ingredients:</h3>
             <input id="ingredients" name="ingredients" type="text" value={this.state.ingredients} onChange={this.handleChangeIngredients} />
             <br></br>
-            Amount:
+            <h3 class="card-subtitle mb-2 text-muted">Amount:</h3>
             <input id="amounts" name="amounts" type="text" value={this.state.amounts} onChange={this.handleChangeAmounts} />
             <br></br>
-            Measurement Type:
+            <h3 class="card-subtitle mb-2 text-muted">Measurement Type:</h3>
             <select id="types" name="types" value={this.state.value} onChange={this.handleChangeType} >
             <option value="oz">oz</option>
             <option value="tsp">tsp</option>
@@ -154,15 +154,15 @@ class AddRecipe extends React.Component {
             <option value="cup">cup</option>
             <option value="tbs">tbs</option>
             </select>
-            <br></br>
-            <button onClick={this.handleAddIngredient}>Add Ingredient</button>
-            <br></br>
-            Directions:
+            <br></br><br></br>
+            <button class="btn btn-primary" onClick={this.handleAddIngredient}>Add Ingredient</button>
+            <br></br><br></br>
+            <h3 class="card-subtitle mb-2 text-muted">Directions:</h3>
             <input id="directions" name="directions" type="text" 
             // value={this.state.directions} 
             onChange={this.handleChangeDirections} />
             <br></br>
-            <button onClick={this.handleSubmit}>Sub</button>
+            <button class="btn btn-primary" onClick={this.handleSubmit}>Submit</button>
           {/* </form> */}
             </div>
 
