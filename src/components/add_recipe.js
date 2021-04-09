@@ -120,6 +120,8 @@ class AddRecipe extends React.Component {
         return (
             <div style={{margin: '90px' }}><br></br>
  <br></br>
+ <div class="card" style={{width: '18rem;'}}>
+  <div class="card-body">
                                 <h5 class="card-subtitle mb-2 text-muted">Recipe Title</h5>
 
             <input id="title" name="title" type="text" 
@@ -155,10 +157,10 @@ class AddRecipe extends React.Component {
             <option value="tbs">tbs</option>
             </select>
             <br></br><br></br>
-            <button class="btn btn-primary" onClick={this.handleAddIngredient}>Add Ingredient</button>
+            <button class="btn btn-primary" onClick={this.handleAddIngredient}>Add Ingredient</button></div></div>
             <br></br><br></br>
             <h3 class="card-subtitle mb-2 text-muted">Directions:</h3>
-            <input id="directions" name="directions" type="text" 
+            <textarea id="directions" name="directions" type="text" style={{width: '400px', height: '200px'}}
             // value={this.state.directions} 
             onChange={this.handleChangeDirections} />
             <br></br>
