@@ -83,19 +83,19 @@ console.log(fin)
         // console.log(func(vol))
         let data2 = romp.map(ing => (
             <Card>
-                <h3><CardHeader title={ing.Ingredient} /></h3>
                 <CardContent>
-            <p>
-            <h3>tbs: {ing.tbs}</h3>
-            <h3>tsp: {ing.tsp}</h3>
-            <h3>floz: {ing.floz}</h3>
-            <h3>cup: {ing.cup}</h3>
-            <h3>mL: {ing.ml}</h3>
-            <h3>L: {ing.L}</h3>
-            <h3>oz: {ing.oz}</h3>
-            <h3>lb: {ing.lb}</h3>
-            <h3>g: {ing.g}</h3>
-            </p>
+                <table class="table">
+                    <tr><th scope="col">{ing.Ingredient}</th></tr>
+            <tr><td>tbs: {ing.tbs}</td></tr>
+            <tr><td>tsp: {ing.tsp}</td></tr>
+            <tr><td>floz: {ing.floz}</td></tr>
+            <tr><td>cup: {ing.cup}</td></tr>
+            <tr><td>mL: {ing.ml}</td></tr>
+            <tr><td>L: {ing.L}</td></tr>
+            <tr><td>oz: {ing.oz}</td></tr>
+            <tr><td>lb: {ing.lb}</td></tr>
+            <tr><td>g: {ing.g}</td></tr>
+            </table>
             </CardContent>
             </Card>
         ))
