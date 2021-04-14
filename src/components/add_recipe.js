@@ -160,7 +160,7 @@ class AddRecipe extends React.Component {
             <button class="btn btn-primary" onClick={this.handleAddIngredient}>Add Ingredient</button></div></div>
             <br></br><br></br>
             <h3 class="card-subtitle mb-2 text-muted">Directions:</h3>
-            <textarea id="directions" name="directions" type="text" style={{width: '400px', height: '200px'}}
+            <textarea id="directions" name="directions" type="text" style={{height: '200px'}}
             // value={this.state.directions} 
             onChange={this.handleChangeDirections} />
             <br></br>

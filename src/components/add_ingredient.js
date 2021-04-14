@@ -71,6 +71,7 @@ class AddIngredient extends React.Component {
             <h5 class="card-subtitle mb-2 text-muted">Measurement Type:</h5>
             <br></br>
             <select id="types" name="types" value={this.state.value} onChange={this.handleChangeType} >
+            <option value=" "> </option>
             <option value="oz">oz</option>
             <option value="tsp">tsp</option>
             <option value="floz">floz</option>
