@@ -103,14 +103,18 @@ class AddRecipe extends React.Component {
              
 
         let ar = [this.second]
-        let data =                 <table>
+        let data =                 <table class="table">                <tr>
+        <th scope="col"><b>Ingredients:</b></th>
+        <th scope="col"><b>Amount:</b></th>
+        <th scope="col"><b>Measurement Type:</b></th>
+    </tr>
            { ar.map(obs => {
                return(
                 <tr>
-                <td><b>Ingredients:</b><p>{obs.ingredients}</p></td>
-                <td><b>Amount</b><p>{obs.amounts}</p></td>
-                <td><b>Measurement Type</b><p>{obs.types}</p></td>
-               </tr> 
+                <td><p>{obs.ingredients}</p></td>
+                <td><p>{obs.amounts}</p></td>
+                <td><p>{obs.types}</p></td>
+               </tr>
                )
 
            })}
