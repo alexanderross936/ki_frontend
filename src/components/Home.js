@@ -22,7 +22,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <p>Hello. Welcome to my App!</p>
+                <p>Hello. Welcome to Kitchen Inventory!</p>
                 
                 
                 
