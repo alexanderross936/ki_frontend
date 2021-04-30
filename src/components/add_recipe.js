@@ -79,6 +79,7 @@ class AddRecipe extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
+
         let post = {
             title: this.state.title,
             ingredients: this.second.ingredients,
@@ -100,7 +101,10 @@ class AddRecipe extends React.Component {
     }
 
     render() {
-             
+        const mystyle = {
+            height: '200px', 
+            display: 'inline-block'
+          };
 
         let ar = [this.second]
         let data =                 <table class="table">                <tr>
@@ -164,7 +168,7 @@ class AddRecipe extends React.Component {
             <button class="btn btn-primary" onClick={this.handleAddIngredient}>Add Ingredient</button></div></div>
             <br></br><br></br>
             <h3 class="card-subtitle mb-2 text-muted">Directions:</h3>
-            <textarea id="directions" name="directions" type="text" style={{height: '200px'}}
+            <textarea id="directions" name="directions" type="text" style={mystyle}
             // value={this.state.directions} 
             onChange={this.handleChangeDirections} />
             <br></br>
