@@ -124,7 +124,6 @@ class AddRecipe extends React.Component {
            })}
 
     </table>
-
         return (
             <div style={{margin: '90px' }}><br></br>
  <br></br>
